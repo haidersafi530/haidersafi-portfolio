@@ -16,9 +16,8 @@ function revealToSspan() {
     })
 }
 
-revealToSspan();
-
-var tl = gsap.timeline()
+function loaderAnimation() {
+    var tl = gsap.timeline()
 .from('.child span', {
     x: "100",
     stagger: .2,
@@ -43,13 +42,26 @@ var tl = gsap.timeline()
     height: "100%",
     top: 0,
     duration: 1,
-    // delay: 1,
+    delay: -.5, 
     ease: Circ.easeInOut,
 })
 .to('#green', {
     height: "0%",
     top: 0,
     duration: 1,
-    // delay: 1,
+    delay: 1,
     ease: Circ.easeInOut,
 })
+}
+
+revealToSspan();
+// loaderAnimation();
+
+gsap.from('g path', {
+    strokeDasharray: 64.68521881103516,
+    strikeOffset: 64.68521881103516,
+    duration: 1,
+    ease: Power3
+})
+
+
