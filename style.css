@@ -284,21 +284,67 @@ html, body {
 
 #work-con{
   width: 100%;
-  background-color: red;
   height: 50vh;
   padding: 0vw 4vw;
   display: flex;
+ 
 }
 
 #work-con .work-lef{
   width: 20%;
-  background-color: blue;
   height: 50vh;
 }
 
 #work-con .work-lef .work-box{
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   background-color:  #59E1ED;
   border-radius: 4px;
 }
+#work-con .work-rig{
+  width: 80%;
+  height: 50vh;
+  border-bottom: 1px solid #BDBDBD;
+  
+}
+#work-small{
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+#work #feat-work{
+  display: flex;
+  background-color: #F2F2F2;
+  height: 50vh;
+  padding: 0vw 4vw;
+}
+
+#feat-work .ft-lef{
+  width: 20%;
+  
+}
+#feat-work .ft-rig{
+  padding-top: 4vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+#feat-work .ft-rig h1{
+  font-size: 8vw;
+  font-weight: 200;
+}
+#feat-work .ft-rig span{
+  color: #59E1ED;
+  font-family: mz;
+}
+
+.feat-box{
+  width: 60px;
+  height: 60px;
+  background-color:  #59E1ED;
+  border-radius: 4px;
+}
+
+
