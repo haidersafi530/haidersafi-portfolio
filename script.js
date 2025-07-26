@@ -16,6 +16,45 @@ function valueSetteras() {
       });
 
 }
+function cardAnimation () {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to(".imgrig .imgcntr:nth-child(1)", {
+      x: 80,  // right move
+      rotate: 5,
+      scrollTrigger: {
+        trigger: ".imgrig",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1
+      }
+    });
+    
+    gsap.to(".imgrig .imgcntr:nth-child(2)", {
+      x: 50,   // right move
+      rotate: 3,
+      scrollTrigger: {
+        trigger: ".imgrig",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1
+      }
+    });
+    
+    gsap.to(".imgrig .imgcntr:nth-child(3)", {
+      x: 20,   // right move
+      rotate: 2,
+      scrollTrigger: {
+        trigger: ".imgrig",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1
+      }
+    });
+    
+      
+};
+cardAnimation();
 
 function revealToSspan() {
     document.querySelectorAll('.reveal').forEach(function(elem){
@@ -116,6 +155,7 @@ function animateHomePage () {
         }
     })  
 }
+
 
 
 revealToSspan();
